@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'EasyWayGPS Landing Page',
+  description: 'La mejor manera de proteger tu vehículo con el sistema de monitoreo más confiable del mercado.',
+  generator: 'EasyWayGPS',
 }
 
 export default function RootLayout({
