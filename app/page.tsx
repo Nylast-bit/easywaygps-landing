@@ -190,7 +190,7 @@ export default function LandingPage() {
                 <div className="text-gray-600">Clientes Activos</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-teal-600 mb-2">99.999%</div>
+                <div className="text-4xl font-bold text-teal-600 mb-2">99.99%</div>
                 <div className="text-gray-600">Tiempo de Actividad</div>
               </div>
               <div>
