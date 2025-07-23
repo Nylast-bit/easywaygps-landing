@@ -25,7 +25,7 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 
-const phone = "8299677562";
+const phone = "8099730250";
 
 const sendWhatsAppMessage = (message: string) => {
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
