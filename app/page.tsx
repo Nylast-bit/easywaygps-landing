@@ -220,8 +220,8 @@ export default function LandingPage() {
                 <div className="bg-teal-500 text-white px-3 py-1 rounded-full text-sm font-medium mb-4 inline-block">
                   Plan Mensual
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">RD$3,000.00</h3>
-                <div className="text-gray-600 mb-2">+ RD$300.00 por mes</div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900">RD$3,000.00 inicial</h3>
+                <div className="text-gray-600 mb-2">RD$300.00 por mes</div>
                 <ul className="space-y-3 mb-8 mt-6">
                   <li className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-teal-500 mr-3" />
