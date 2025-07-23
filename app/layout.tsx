@@ -21,14 +21,16 @@ export default function RootLayout({
 
 
         <meta name="description" content="EasyWayGPS ofrece rastreo vehicular en tiempo real, control total, historial, geocercas, alertas y más. Plataforma web y móvil moderna para tu seguridad." />
-        <meta name="keywords" content="EasyWayGPS, rastreo GPS RD, localizador de vehículos, monitoreo vehicular, GPS en tiempo real, geocercas, alertas de movimiento, apagado remoto" />
+        <meta name="keywords" content="EasyWayGPS, easyway, Easy Way, EASYWAY, GPS, , rastreo GPS RD, localizador de vehículos, rastreo, geolocalizacion,  monitoreo vehicular, GPS en tiempo real, geocercas, alertas de movimiento, apagado remoto" />
         <meta name="author" content="EasyWayGPS Team" />
 
 
-        <meta property="og:title" content="EasyWayGPS - Rastreo Vehicular Inteligente en RD" />
+        <meta property="og:title" content="EasyWayGPS" />
         <meta property="og:description" content="Monitorea, protege y gestiona tu vehículo con EasyWayGPS. Plataforma inteligente con alertas, historial y control total." />
         <meta property="og:url" content="https://easywagps.com" />
         <meta property="og:type" content="website" />
+
+
 
 
         <meta name="twitter:card" content="summary_large_image" />
