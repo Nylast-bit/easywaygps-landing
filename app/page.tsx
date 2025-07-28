@@ -434,8 +434,8 @@ export default function LandingPage() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-6">Información de Contacto</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center">
-                    <div className="bg-teal-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <div className="flex items-center cursor-pointer" onClick={() => sendWhatsAppMessage("Hola, Quiero más información de sus productos y servicios!")}>
+                    <div className="bg-teal-100 w-12 h-12 rounded-full flex items-center justify-center mr-4 " >
                       <Phone className="w-6 h-6 text-teal-600" />
                     </div>
                     <div>
@@ -444,7 +444,7 @@ export default function LandingPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-center">
+                  <div className="flex items-center cursor-pointer"  onClick={() => window.location.href = "mailto:easywaygps.info@gmail.com"}>
                     <div className="bg-teal-100 w-12 h-12 rounded-full flex items-center justify-center mr-4">
                       <Mail className="w-6 h-6 text-teal-600" />
                     </div>
@@ -566,21 +566,24 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="bg-teal-800 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-4 gap-8">
-            <div className="lg:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                
-                <Image
+          <div className="grid lg:grid-cols-4 gap-8 text-center lg:text-left">
+            {/* Logo + descripción + redes */}
+            <div className="lg:col-span-2 flex flex-col items-center lg:items-start">
+              <Link href="#inicio">
+                <div className="flex items-center space-x-2 justify-center lg:justify-start">
+                  <Image
                     src="/images/logo.png"
                     alt="EasyWayGPS Logo"
                     width={150}
                     height={150}
                   />
-              </div>
-              <p className="text-white mb-6 max-w-md">
-                Es tu vuelta.
+                </div>
+              
+              </Link>
+              <p className="text-white text-lg mb-6 max-w-md">
+                Es tu vuelta
               </p>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 justify-center lg:justify-start">
                 <Link href="https://www.instagram.com/easywaygps/?g=5" className="bg-gray-800 p-3 rounded-full hover:bg-teal-600 transition-colors">
                   <Instagram className="w-5 h-5" />
                 </Link>
@@ -599,48 +602,42 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div>
+            {/* Enlaces */}
+            <div className="flex flex-col items-center lg:items-start">
               <h4 className="font-semibold mb-4">Enlaces</h4>
               <ul className="space-y-2 text-white">
-                <li>
-                  <Link href="#inicio" className="hover:text-teal-400 transition-colors">
-                    Inicio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#ventajas" className="hover:text-teal-400 transition-colors">
-                    Ventajas
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#servicios" className="hover:text-teal-400 transition-colors">
-                    Servicios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#testimonios" className="hover:text-teal-400 transition-colors">
-                    Testimonios
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#contacto" className="hover:text-teal-400 transition-colors">
-                    Contacto
-                  </Link>
-                </li>
+                <li><Link href="#inicio" className="hover:text-teal-400 transition-colors">Inicio</Link></li>
+                <li><Link href="#ventajas" className="hover:text-teal-400 transition-colors">Ventajas</Link></li>
+                <li><Link href="#servicios" className="hover:text-teal-400 transition-colors">Servicios</Link></li>
+                <li><Link href="#testimonios" className="hover:text-teal-400 transition-colors">Testimonios</Link></li>
+                <li><Link href="#contacto" className="hover:text-teal-400 transition-colors">Contacto</Link></li>
               </ul>
             </div>
 
-            <div>
+            {/* Contacto */}
+            <div className="flex flex-col items-center lg:items-start">
               <h4 className="font-semibold mb-4">Contacto</h4>
               <ul className="space-y-2 text-white">
-                <li className="flex items-center">
+                <li
+                  className="flex items-center cursor-pointer"
+                  onClick={() =>
+                    sendWhatsAppMessage("Hola, Quiero más información de sus productos y servicios!")
+                  }
+                >
                   <Phone className="w-4 h-4 mr-2" />
                   809-973-0250
                 </li>
+
                 <li className="flex items-center">
-                  <Mail className="w-4 h-4 mr-2" />
-                  easywaygps.info@gmail.com
+                  <a
+                    href="mailto:easywaygps.info@gmail.com"
+                    className="flex items-center text-inherit no-underline"
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    easywaygps.info@gmail.com
+                  </a>
                 </li>
+
                 <li className="flex items-center">
                   <MapIcon className="w-4 h-4 mr-2" />
                   Av. Prolongación 27 de Febrero, Santo Domingo
@@ -654,6 +651,7 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
+
     </div>
   )
 }
