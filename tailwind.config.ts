@@ -13,6 +13,8 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+  			ink: 'rgb(13 19 18 / <alpha-value>)',
+  			pin: 'rgb(21 163 140 / <alpha-value>)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
